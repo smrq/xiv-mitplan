@@ -1,0 +1,101 @@
+.vis-drag-left,
+.vis-drag-right {
+	pointer-events: none;
+}
+
+.vis-time-axis .vis-grid {
+	display: none;
+}
+
+.vis-custom-time {
+	background-color: gold;
+	cursor: auto;
+}
+
+.vis-custom-time > :first-child {
+	pointer-events: none;
+}
+
+.vis-custom-time > .vis-custom-time-marker {
+	white-space: nowrap;
+	padding: 2px 5px;
+}
+
+.vis-custom-time[class*='auto-'] {
+	background-color: lightsteelblue;
+}
+
+.vis-custom-time[class*='dot'] {
+	background-color: orangered;
+}
+
+.vis-custom-time[class*='tankbuster-'] {
+	background-color: steelblue;
+}
+
+.vis-custom-time[class*='raidwide-'] {
+	background-color: lightsalmon;
+}
+
+.vis-custom-time[class*='enrage-'] {
+	background-color: black;
+}
+
+.vis-item {
+	--fg-color: #d5e4f6;
+	--bg-color: #f1f8ff;
+	--border-color: #bed4f0;
+	height: 30px;
+}
+
+.vis-item {
+	background: linear-gradient(
+			to right,
+			rgba(var(--color), 0.5) 0 var(--ratio, 0),
+			rgba(var(--color), 0.1) var(--ratio) 100%
+		),
+		#fff !important;
+	border-color: rgba(var(--color), 0.4) !important;
+}
+
+.vis-item.vis-selected {
+	background: linear-gradient(
+			to right,
+			rgba(var(--color), 0.9) 0 var(--ratio, 0),
+			rgba(var(--color), 0.5) var(--ratio) 100%
+		),
+		#fff !important;
+	border-color: rgba(var(--color), 0.7) !important;
+}
+
+.vis-item .vis-delete:after {
+	color: black !important;
+}
+
+.vis-item .vis-delete:hover {
+	background: transparent !important;
+}
+
+.vis-item .vis-delete:hover:after {
+	color: red !important;
+}
+
+.vis-item .vis-item-content {
+	padding: 0 !important;
+}
+
+.vis-label img,
+.vis-item .vis-item-content img {
+	height: 25px;
+}
+
+.vis-labelset .vis-label .vis-inner {
+	display: inline-flex !important;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+}
+
+.vis-label.vis-nesting-group::before {
+	display: none !important;
+}
