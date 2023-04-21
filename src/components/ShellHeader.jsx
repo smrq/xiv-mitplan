@@ -17,7 +17,7 @@ export function ShellHeader(props) {
 					size="sm"
 					mr="l"
 				/>
-				<Text>FFXIV Mitigation Planner</Text>
+				<Text>XIV MitPlan</Text>
 				<Text ml="auto">
 					made by <Anchor href="https://github.com/smrq">smrq</Anchor>
 				</Text>
